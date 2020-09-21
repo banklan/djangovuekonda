@@ -29,7 +29,7 @@ SECRET_KEY = 'mc7i=zfbdh9!yv@8^3=a5489bz*-qyavl6#t!na)!^42e8v)0@'
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['konda.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['djangovuekonda.herokuapp.com', 'localhost', '127.0.0.1']
 
 DEBUG_PROPAGATE_EXCEPTIONS = True
 
