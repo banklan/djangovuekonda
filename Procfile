@@ -1,0 +1,1 @@
+web: gunicorn konda.wsgi --log-file -

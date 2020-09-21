@@ -1,0 +1,32 @@
+.bckg{
+    // background: #1c024d;
+}
+.banner{
+  height: 30rem;
+  width: 100%;
+  background-image: linear-gradient(to bottom right,rgba(220, 139, 17, 0.37), rgba(37, 23, 1, 0.585)),url('../assets/images/bckg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem !important;
+}
+.links{
+  padding: 0 2rem;
+  // color: rgb(32, 5, 75);
+  font-size: 1.4rem;
+  a{
+    text-decoration: none;
+    transition: all .3s;
+    padding-right: 10px;
+    color: rgb(32, 5, 75);
+
+    &:hover{
+      color: rgb(7, 133, 55);
+    }
+  }
+
+}
