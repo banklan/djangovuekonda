@@ -10,10 +10,11 @@
 
 <script>
 import axios from 'axios'
+
 export default {
     data() {
         return {
-        posts: []
+          posts: []
         }
     },
     created() {
@@ -25,6 +26,3 @@ export default {
 }
 </script>
 
-<style lang="scss">
-
-</style>
