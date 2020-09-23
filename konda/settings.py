@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 import os
 from pathlib import Path
+from decouple import config
 
 import dj_database_url
 
@@ -23,7 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'mc7i=zfbdh9!yv@8^3=a5489bz*-qyavl6#t!na)!^42e8v)0@'
+# SECRET_KEY = 'mc7i=zfbdh9!yv@8^3=a5489bz*-qyavl6#t!na)!^42e8v)0@'
+SECRET_KEY = config('SECRET_KEY')
+# SECRET_KEY = os.environ['KONDA_SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -79,9 +82,6 @@ TEMPLATES = [
         },
     },
 ]
-
-WSGI_APPLICATION = 'konda.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -145,4 +145,4 @@ STATICFILES_DIRS = [
 # CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_ALLOW_ALL =True
 
-WSGI_APPLICATION = 'konda.wsgi.application'
+# WSGI_APPLICATION = 'konda.wsgi.application'
