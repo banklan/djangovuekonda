@@ -24,7 +24,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'mc7i=zfbdh9!yv@8^3=a5489bz*-qyavl6#t!na)!^42e8v)0@'
 SECRET_KEY = config('SECRET_KEY')
 # SECRET_KEY = os.environ['KONDA_SECRET_KEY']
 
